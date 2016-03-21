@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+#Django Stuff:
+*.log
+migrations
+
+# Virtual Environment
+cupboard_venv
