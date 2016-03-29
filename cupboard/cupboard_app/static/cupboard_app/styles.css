@@ -108,11 +108,32 @@ div.textcontainer p {
  }
 
 /*-------------------- SEARCH STYLES ---------------------*/
+/**
+ * Styles the form
+ **/
+ input[type=text] {
+ 	width: 100%;
+ 	/*padding: 12px 20;*/
+ 	padding: 30px 100px;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ 	border: 3px solid #2e2925;
+ 	-webkit-transition: 0.5s;
+ 	transition: 0.5s;
+ 	outline: none;
+ 	font-size: 0.3em;
+ }
 
 /**
+ * Styles the focus of the form
+ **/
+ input[type=text]:focus {
+ 	border: 3px solid #95b401;
+ }
+
+ /**
  * Styles the submit button
  **/
-
  input[type=submit] {
  	background-color: #2e2925;
  	border: none;
