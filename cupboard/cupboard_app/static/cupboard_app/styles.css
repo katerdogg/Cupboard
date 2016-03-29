@@ -1,0 +1,173 @@
+/*Styles for Cupboard App*/
+
+/*-------------------- MAIN STYLES ---------------------*/
+
+
+/******
+ * Font Imports
+ */
+  @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+/******/
+
+/**
+ * Body Stylings / Background Image for index
+ **/
+body {
+	margin: 0;
+	background-image: url("https://static.pexels.com/photos/60795/pexels-photo-60795.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+}
+
+/**
+ * Navigation Bar
+ **/
+
+/* Main Navigation bar*/
+ul {
+	/*font-family: 'Work Sans', sans-serif;*/
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #2e2925;
+}
+/* Align all nav buttons to the left */
+li {
+	float: left;
+}
+
+/* Styles all a tags to their default styles */
+li a {
+	display: block;
+	color: #f0f0ee;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* When NOT clicked */
+li a:hover:not(.active){
+	/*background-color: #eac451;*/
+	background-color: #95b401;
+}
+
+/* When a nav is the current tab */
+.active {
+	/*background-color: #eac451;*/
+	background-color: #95b401;
+}
+
+/* Align last button (search) to the right*/
+
+li:last-child {
+	float: right;
+}
+
+/*-------------------- INDEX STYLES ---------------------*/
+
+/**
+ * Styles the centered text in the middle of the page
+ **/
+ div.textcontainer {
+ 	height: 10em;
+ 	font-size: 2em;
+ 	position: relative;
+ }
+
+div.textcontainer p {
+	margin: 0;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/**
+ * Styles the buttons
+ **/
+
+ .button {
+ 	background-color: #2e2925;
+ 	border: none;
+ 	color: #fff;
+ 	padding: 20px 40px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	position: absolute;
+ 	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+ }
+
+/*-------------------- SEARCH STYLES ---------------------*/
+
+/**
+ * Styles the submit button
+ **/
+
+ input[type=submit] {
+ 	background-color: #2e2925;
+ 	border: none;
+ 	color: #fff;
+ 	font-size: 1em;
+ 	font-family: 'Josefin Sans', sans-serif;
+ 	padding: 20px 40px;
+ 	text-decoration: none;
+ 	margin: 4px 2px;
+
+ }
+/**
+ * Styles the Form
+ **/
+ form {
+ 	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 3em;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- FOOTER STYLES ---------------------*/
+/**
+ * Styles the footer
+ **/
+/* footer {
+ 	/* fix footer to the bottom of the page */
+ 	/*position: fixed;
+ 	left: 0px;
+ 	bottom: 0px;
+ 	height: 30px;
+ 	width: 100%;
+ 	background: #2d2824;
+ 	text-align: center;
+ 	color: white;
+ 	font-family: 'Josefin Sans', sans-serif;
+ 	padding: 7px;
+ }

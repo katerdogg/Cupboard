@@ -8,3 +8,6 @@ migrations
 
 # Virtual Environment
 cupboard_venv
+
+#DS_Store
+.DS_Store
