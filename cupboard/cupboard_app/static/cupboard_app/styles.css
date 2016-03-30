@@ -78,6 +78,9 @@ li:last-child {
  	position: relative;
  }
 
+/**
+ * Styles the text inside the class textcontainer
+ **/
 div.textcontainer p {
 	margin: 0;
 	position: absolute;
@@ -91,7 +94,6 @@ div.textcontainer p {
 /**
  * Styles the buttons
  **/
-
  .button {
  	background-color: #2e2925;
  	border: none;
@@ -107,14 +109,20 @@ div.textcontainer p {
 	font-size: 2em;
  }
 
+ .botton:hover {
+ 	background-color: #95b401;
+ }
+
 /*-------------------- SEARCH STYLES ---------------------*/
+
+
 /**
  * Styles the form
  **/
  input[type=text] {
  	width: 100%;
  	/*padding: 12px 20;*/
- 	padding: 30px 100px;
+ 	/*padding: 30px 100px;*/
  	margin: 0;
  	box-sizing: border-box;
  	border: 3px solid #2e2925;
@@ -122,6 +130,8 @@ div.textcontainer p {
  	transition: 0.5s;
  	outline: none;
  	font-size: 0.3em;
+ 	width: 500px;
+ 	height: 100px;
  }
 
 /**
@@ -131,7 +141,7 @@ div.textcontainer p {
  	border: 3px solid #95b401;
  }
 
- /**
+/**
  * Styles the submit button
  **/
  input[type=submit] {
@@ -143,8 +153,16 @@ div.textcontainer p {
  	padding: 20px 40px;
  	text-decoration: none;
  	margin: 4px 2px;
-
  }
+
+/**
+ * 
+ **/
+ input[type=submit]:hover {
+ 	background-color: #95b401;
+ }
+
+
 /**
  * Styles the Form
  **/
