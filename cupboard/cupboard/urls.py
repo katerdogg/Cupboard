@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from cupboard_site.views import *
+from cupboard_app import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', index),
-]
+    url(r'^$', views.index, name="index"),
+    url(r'^search/', views.search, name="search"),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
