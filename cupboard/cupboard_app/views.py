@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def index(request):
 	return render(request, "cupboard_app/index.html")
+
+
+def search(request):
+	return render(request, "cupboard_app/search.html")

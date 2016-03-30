@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<!-- Index Page for Cupboard site -->
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="../../static/cupboard_app/styles.css">
-	</head>
-		<body>
-			<section>
-			<ul>
-				<li><a href="https://www.facebook.com">CUPBOARD</a></li>
-				<li><a href="https://www.twitter.com">My Profile</a></li>
-				<li><a class="active" href="https://www.youtube.com">Search!</a></li>
-			</ul>
-			</section>
-			<div class="textcontainer">
-				<p> Cupboard uses your ingredients to search 1,000,000+ recipes<br> from the most popular websites today- Get started now! </p>
-			</div>
-			<div> 
-				<a href="4" class="button">Search!</a>
-			</div>
+{% extends "base.html" %}
+{% block content %}
 
-			<!-- <footer>
-				Cupboard 2016
-			</footer> -->
-		</body>
-</html>
+	<div class="textcontainer">
+		<p> Cupboard uses your ingredients to search 1,000,000+ recipes<br> from the most popular websites today- Get started now! </p>
+	</div>
+	<div> 
+		<a href="/search" class="button">Search!</a>
+	</div>
+
+{% endblock %}
+			
