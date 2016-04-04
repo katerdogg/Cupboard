@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-	Hello! Resultss!
+	<section id="results">
+	Hello! Results! <br>
 	{% for recipe in results %}
-	{{recipe.recipeName}} <br>
-	{{}}
-
+	<!-- Note: Gives URL, does not display photo
+	{{recipe.smallImageUrls}}<br> -->
+	Recipe: {{recipe.recipeName}} |
+	Rating: {{recipe.rating}} | <br>
+	<!-- Note: Only displays in seconds- Convert to minutes -->
+	Time to Make: {{recipe.totalTimeInSeconds}} seconds
 	{% endfor %}
+	</section>
 {% endblock %}

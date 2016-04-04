@@ -1,10 +1,13 @@
-""" views for cupboard capstone """
+"""
+views for cupboard capstone
+"""
+
+### IMPORTS ###
 from django.shortcuts import render
 import requests
 import json
 from yummly import Client
-
-# Create your views here.
+###############
 
 def index(request):
 	return render(request, "cupboard_app/index.html")
@@ -13,7 +16,9 @@ def search(request):
 	return render(request, "cupboard_app/search.html")
 
 def results(request):
-	"""Results page for the search from the user"""
+	"""
+	Results page for the search from the user
+	"""
 	context_dict = {}
 	# If requested (if the submit button has been clicked)
 	if request.method == "POST":
