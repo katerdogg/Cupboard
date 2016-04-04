@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-	<section id="results">
-	Hello! Results! <br>
+	<body id="results">
+	Search Results <br>
 	{% for recipe in results %}
-	<!-- Note: Gives URL, does not display photo
-	{{recipe.smallImageUrls}}<br> -->
-	Recipe: {{recipe.recipeName}} |
-	Rating: {{recipe.rating}} | <br>
+	{{recipe.recipeName}} |
+	Rating: {{recipe.rating}}<br>
+	<img src='{{recipe.smallImageUrls}}'><br>
+	<!-- {{recipe.smallImageUrls}} -->
+	<!-- <img src="http://lh3.googleusercontent.com/jyVtKYjYkj_JgpMLoLpryZqXAxdy1JeRdJUiCfXGAgeiS-vuES2A9WGlU4D1tZhfzJ0ItEO6TN5KlzIc4Q6lJQ=s90"><br> -->
 	<!-- Note: Only displays in seconds- Convert to minutes -->
-	Time to Make: {{recipe.totalTimeInSeconds}} seconds
+	Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
 	{% endfor %}
-	</section>
+	</body>
 {% endblock %}
