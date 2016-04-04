@@ -13,7 +13,7 @@ def search(request):
 	return render(request, "cupboard_app/search.html")
 
 def results(request):
-
+	context_dict = {}
 	if request.method == "POST":
 		search_list = request.POST["ingredients"].split(", ")
 		client = Client(api_id="243f40b9", api_key="0b99d35c38f2043e163a04a97e9c5476", timeout=5.0, retries=0)
@@ -35,6 +35,5 @@ def results(request):
 		}
 		results = client.search(**params)
 		context_dict = {"results": results.matches}
-		print(results.matches)
-	context_dict = {}
+	
 	return render(request, "cupboard_app/results.html", context_dict)

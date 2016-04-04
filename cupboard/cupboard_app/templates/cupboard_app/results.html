@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-	Hello! Results!
+	Hello! Resultss!
 	{% for recipe in results %}
-	{{recipe}} 123
+	{{recipe.recipeName}} <br>
+	{{}}
+
 	{% endfor %}
 {% endblock %}
