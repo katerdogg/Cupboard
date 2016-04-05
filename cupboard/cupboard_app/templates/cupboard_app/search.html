@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-	<form action="/results/" method="POST">	
-		{% csrf_token %}
-		1. Ingredients I have:<br>
-		<input type="text" name="ingredients" value="Peaches, Flour, Strawberries..."><br>
-		<input type="submit" value="2. Submit">
-	</form>
-
+	<body class="search">
+		<form action="/results/" method="POST">	
+			{% csrf_token %}
+			1. Ingredients I have:<br>
+			<input type="text" name="ingredients" value="Peaches, Flour, Strawberries..."><br>
+			<input type="submit" value="2. Submit">
+		</form>
+	</body>
 {% endblock %}
 

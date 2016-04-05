@@ -17,4 +17,4 @@ class Fav_Recipe(models.Model):
 class Fav_Search(models.Model):
 	"""Holds all Fav Search data"""
 	# search_terms = 
-	# user_note = 
+	# user_note =

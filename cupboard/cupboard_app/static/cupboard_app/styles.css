@@ -15,9 +15,6 @@
  **/
 body {
 	margin: 0;
-	background-image: url("https://static.pexels.com/photos/60795/pexels-photo-60795.jpeg");
-	background-size: 100%;
-	background-repeat: no-repeat;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
 }
@@ -70,9 +67,18 @@ li:last-child {
 /*-------------------- INDEX STYLES ---------------------*/
 
 /**
+ * Styles the index and search pages to have same background photo
+ **/
+.index, .search {
+	background-image: url("https://static.pexels.com/photos/60795/pexels-photo-60795.jpeg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/**
  * Styles the centered text in the middle of the page
  **/
- div.textcontainer {
+div.textcontainer {
  	height: 10em;
  	font-size: 2em;
  	position: relative;
@@ -177,10 +183,22 @@ div.textcontainer p {
 	font-size: 3em;
  }
 
+/*-------------------- RESULT STYLES ---------------------*/
 
+/**
+ * Styles the general look of the results page
+ **/
+.result {
+	background-image: url("http://www.softplan.com/images/walnut.png");
+	/*background-size: 100%;*/
+	background-repeat: repeat;
+}
 
-
-
+.image_grid {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+}
 
 
 

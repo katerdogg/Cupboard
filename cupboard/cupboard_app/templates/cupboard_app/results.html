@@ -1,15 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-	<body id="results">
-	Search Results <br>
-	{% for recipe in results %}
-	{{recipe.recipeName}} |
-	Rating: {{recipe.rating}}<br>
-	<img src='{{recipe.smallImageUrls}}'><br>
-	<!-- {{recipe.smallImageUrls}} -->
-	<!-- <img src="http://lh3.googleusercontent.com/jyVtKYjYkj_JgpMLoLpryZqXAxdy1JeRdJUiCfXGAgeiS-vuES2A9WGlU4D1tZhfzJ0ItEO6TN5KlzIc4Q6lJQ=s90"><br> -->
-	<!-- Note: Only displays in seconds- Convert to minutes -->
-	Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
-	{% endfor %}
-	</body>
+    <body class="result">
+    Search Results <br>
+    <div class="image_grid">
+        {% for recipe in results %}
+        {{recipe.recipeName}} |
+        Rating: {{recipe.rating}}<br>
+            <!-- If api returns multiple photos, this method will not work. -->
+            {% for image in recipe.smallImageUrls %}
+            <img src='{{image}}'><br>
+            {% endfor %}
+
+        
+        <!-- NOTE: Only displays in seconds- Convert to minutes -->
+        Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
+        {% endfor %}
+    </div>
+    </body>
 {% endblock %}
