@@ -3,22 +3,33 @@
     <body class="result">
     <h1>Search Results</h1><br>
     <div class="search_result">
+
         {% for recipe in results %}
         <section id="result_grid" class="result_grid">
         
-        {{recipe.recipeName}} |
-        Rating: {{recipe.rating}}<br>
+        <!-- ######### test code ######### -->
+        <!-- {{recipe.recipeName}} -->
+        <!-- {{recipe.sourceSiteUrl}} -->
+        <!-- ######### end of test code ######### -->
+
+
+
+        
+        <h2><a href="{{recipe.sourceRecipeUrl}}">{{recipe.recipeName}}</a></h2> |
+        Rating: {{recipe.rating}} |<br><br>
+
 
             <!-- If api returns multiple photos, this method will not work. -->
             {% for image in recipe.smallImageUrls %}
-            <img src='{{image}}'><br>
+            <img src='{{image}}'><br><br>
             {% endfor %}
 
         
         <!-- NOTE: Only displays in seconds- Convert to minutes -->
         Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
-        {% endfor %}
         </section>
+        {% endfor %}   
+
     </div>
     </body>
 {% endblock %}

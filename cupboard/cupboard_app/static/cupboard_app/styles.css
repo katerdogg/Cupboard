@@ -13,6 +13,7 @@
 /**
  * Body Stylings / Background Image for index
  **/
+
 body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
@@ -48,18 +49,16 @@ li a {
 
 /* When NOT clicked */
 li a:hover:not(.active){
-	/*background-color: #eac451;*/
+	color: #2e2925;
 	background-color: #95b401;
 }
 
 /* When a nav is the current tab */
 .active {
-	/*background-color: #eac451;*/
 	background-color: #95b401;
 }
 
 /* Align last button (search) to the right*/
-
 li:last-child {
 	float: right;
 }
@@ -75,18 +74,14 @@ li:last-child {
 	background-repeat: no-repeat;
 }
 
-/**
- * Styles the centered text in the middle of the page
- **/
+/* Styles the centered text in the middle of the page */
 div.textcontainer {
  	height: 10em;
  	font-size: 2em;
  	position: relative;
  }
 
-/**
- * Styles the text inside the class textcontainer
- **/
+/* Styles the text inside the class textcontainer */
 div.textcontainer p {
 	margin: 0;
 	position: absolute;
@@ -97,9 +92,7 @@ div.textcontainer p {
 	text-align: center;
 }
 
-/**
- * Styles the buttons
- **/
+/* Styles the buttons */
  .button {
  	background-color: #2e2925;
  	border: none;
@@ -115,65 +108,62 @@ div.textcontainer p {
 	font-size: 2em;
  }
 
- .botton:hover {
+/* Stlyes the buttons whenever hovered over */
+ .button:hover {
+ 	color: #2e2925;
  	background-color: #95b401;
  }
 
 /*-------------------- SEARCH STYLES ---------------------*/
 
-
 /**
- * Styles the form
+ * Form Styles
  **/
- input[type=text] {
- 	width: 100%;
- 	/*padding: 12px 20;*/
- 	/*padding: 30px 100px;*/
- 	margin: 0;
- 	box-sizing: border-box;
- 	border: 3px solid #2e2925;
- 	-webkit-transition: 0.5s;
- 	transition: 0.5s;
- 	outline: none;
- 	font-size: 0.3em;
- 	width: 500px;
- 	height: 100px;
- }
 
-/**
- * Styles the focus of the form
- **/
- input[type=text]:focus {
- 	border: 3px solid #95b401;
- }
+/* Styles the main form */
+input[type=text] {
+	/*padding: 12px 20;*/
+	/*padding: 30px 100px;*/
+	margin: 0;
+	box-sizing: border-box;
+	border: 3px solid #2e2925;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	font-size: 0.3em;
+	width: 500px;
+	height: 100px;
+}
 
-/**
- * Styles the submit button
- **/
- input[type=submit] {
- 	background-color: #2e2925;
- 	border: none;
- 	color: #fff;
- 	font-size: 1em;
- 	font-family: 'Josefin Sans', sans-serif;
- 	padding: 20px 40px;
- 	text-decoration: none;
- 	margin: 4px 2px;
- }
+/* When the form is clicked (or focus on) */
+input[type=text]:focus {
+	border: 3px solid #95b401;
+}
 
-/**
- * 
- **/
- input[type=submit]:hover {
- 	background-color: #95b401;
- }
+/* Styles the submit button */
+input[type=submit] {
+	background-color: #2e2925;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 20px 40px;
+	text-decoration: none;
+	margin: 4px 2px;
+}
+
+/* Styles the submit button when hovered over */
+input[type=submit]:hover {
+	color: #2e2925;
+	background-color: #95b401;
+}
 
 
 /**
  * Styles the Form
  **/
- form {
- 	margin: 0;
+form {
+	margin: 0;
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -181,7 +171,7 @@ div.textcontainer p {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 3em;
- }
+}
 
 /*-------------------- RESULT STYLES ---------------------*/
 
@@ -202,24 +192,40 @@ div.textcontainer p {
 
 /* Creates and styles each individual result */
 .result_grid {
-	width: 300px;
-	height: 300px;
+	width: 290px;
+	height: 290px;
 	list-style: none;
-	position: relative;
-	overflow: hidden;
+	/*position: relative;
+	/*overflow: hidden;*/
+	padding: 10px;
+	background-color: #2e2925;
 
 	margin: 15px 15px 0 0;
 	display: inline-block;
 	border: 5px solid #2e2925;
 	border-radius: 2px;
+	box-shadow: 2px 2px #687e01;
 }
 
-/* styles each image result */
+
+/* Styles all a tags within the results_grid class */
+.result_grid a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Styles a tags when hovered over */
+.result_grid a:hover {
+	color: #e8e7e7;
+}
+
+/* Styles each image result */
 .result_grid img {
-	position: absolute;
+	/*position: absolute;*/
 	left: 50%;
 	top: 50%;
 }
+
 
 /*-------------------- FOOTER STYLES ---------------------*/
 /**
