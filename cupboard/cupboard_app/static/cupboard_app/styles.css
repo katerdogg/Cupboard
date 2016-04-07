@@ -188,16 +188,37 @@ div.textcontainer p {
 /**
  * Styles the general look of the results page
  **/
+
+/* creates the repeating background image */
 .result {
 	background-image: url("http://www.softplan.com/images/walnut.png");
 	/*background-size: 100%;*/
 	background-repeat: repeat;
 }
 
-.image_grid {
+/**
+ * Styles the results page in a grid form
+ **/
+
+/* Creates and styles each individual result */
+.result_grid {
+	width: 300px;
+	height: 300px;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+
+	margin: 15px 15px 0 0;
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	border: 5px solid #2e2925;
+	border-radius: 2px;
+}
+
+/* styles each image result */
+.result_grid img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
 }
 
 /*-------------------- FOOTER STYLES ---------------------*/

@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
     <body class="result">
-    Search Results <br>
-    <div class="image_grid">
+    <h1>Search Results</h1><br>
+    <div class="search_result">
         {% for recipe in results %}
+        <section id="result_grid" class="result_grid">
+        
         {{recipe.recipeName}} |
         Rating: {{recipe.rating}}<br>
+
             <!-- If api returns multiple photos, this method will not work. -->
             {% for image in recipe.smallImageUrls %}
             <img src='{{image}}'><br>
@@ -15,6 +18,7 @@
         <!-- NOTE: Only displays in seconds- Convert to minutes -->
         Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
         {% endfor %}
+        </section>
     </div>
     </body>
 {% endblock %}
