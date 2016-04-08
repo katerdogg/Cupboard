@@ -7,6 +7,7 @@ from django.shortcuts import render
 # import requests
 # import json
 from yummly import Client
+from cupboard import local_settings
 ###############
 
 
@@ -29,7 +30,7 @@ def results(request):
             # a comma and a space
         search_list = request.POST["ingredients"].split(", ")
         # var to hold the api id and key
-        client = Client(api_id=api_id_code, api_key=api_key_code, timeout=5.0, retries=0)
+        client = Client(api_id=local_settings.api_id_code, api_key=local_settings.api_key_code, timeout=5.0, retries=0)
 
         # Params for searches
         params = {
