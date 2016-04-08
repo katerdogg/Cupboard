@@ -189,11 +189,19 @@ form {
 /**
  * Styles the results page in a grid form
  **/
+ .search_result {
+ 	width: 95%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align: center;
+ }
 
 /* Creates and styles each individual result */
 .result_grid {
-	width: 290px;
-	height: 290px;
+	max-width: 290px;
+	min-width: 290px;
+	max-height: 290px;
+	min-height: 290px;
 	list-style: none;
 	/*position: relative;
 	/*overflow: hidden;*/
@@ -202,6 +210,7 @@ form {
 
 	margin: 15px 15px 0 0;
 	display: inline-block;
+	vertical-align: top;
 	border: 5px solid #2e2925;
 	border-radius: 2px;
 	box-shadow: 2px 2px #687e01;
@@ -219,15 +228,14 @@ form {
 	color: #e8e7e7;
 }
 
-/* Styles each image result */
+/* Styles each image result*/
 .result_grid img {
-	/*position: absolute;*/
 	left: 50%;
 	top: 50%;
 }
 
 
-/*-------------------- FOOTER STYLES ---------------------*/
+/*-------------------- FOOTER STYLES ---------------------
 /**
  * Styles the footer
  **/

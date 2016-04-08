@@ -1,21 +1,14 @@
 {% extends "base.html" %}
+{% load secondstominutes %}
 {% block content %}
     <body class="result">
     <h1>Search Results</h1><br>
     <div class="search_result">
 
         {% for recipe in results %}
-        <section id="result_grid" class="result_grid">
+        <div class="result_grid">
         
-        <!-- ######### test code ######### -->
-        <!-- {{recipe.recipeName}} -->
-        <!-- {{recipe.sourceSiteUrl}} -->
-        <!-- ######### end of test code ######### -->
-
-
-
-        
-        <h2><a href="{{recipe.sourceRecipeUrl}}">{{recipe.recipeName}}</a></h2> |
+        <h2><a href="http://www.yummly.com/recipe/{{recipe.id}}">{{recipe.recipeName}}</a></h2> |
         Rating: {{recipe.rating}} |<br><br>
 
 
@@ -24,10 +17,8 @@
             <img src='{{image}}'><br><br>
             {% endfor %}
 
-        
-        <!-- NOTE: Only displays in seconds- Convert to minutes -->
-        Time to Make: {{recipe.totalTimeInSeconds}} seconds<br><br>
-        </section>
+        Time to Make: {{recipe.totalTimeInSeconds|secondstominutes}} minutes<br><br>
+        </div>
         {% endfor %}   
 
     </div>
