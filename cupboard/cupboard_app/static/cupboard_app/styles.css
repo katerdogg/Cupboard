@@ -14,12 +14,12 @@
  * Body Stylings / Background Image for index
  **/
 
-body {
+/*body {
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #fff;
-}
-
+}*/
+/*----------------------------------------------------------*/
 /**
  * Navigation Bar
  **/
@@ -68,21 +68,17 @@ li:last-child {
 /**
  * Styles the index and search pages to have same background photo
  **/
-.index, .search {
+/*.index, .search {
 	background-image: url("https://static.pexels.com/photos/60795/pexels-photo-60795.jpeg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-
+*/
 /* Styles the centered text in the middle of the page */
-div.textcontainer {
- 	height: 10em;
- 	font-size: 2em;
- 	position: relative;
- }
+/*/
 
 /* Styles the text inside the class textcontainer */
-div.textcontainer p {
+/*div.textcontainer p {
 	margin: 0;
 	position: absolute;
 	top: 80%;
@@ -90,7 +86,7 @@ div.textcontainer p {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-}
+}*/
 
 /* Styles the buttons */
  .button {
@@ -234,8 +230,75 @@ form {
 	top: 50%;
 }
 
+/*-------------------- PARALLAX STYLES ---------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1b191a;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-size: 2em;*/
+	color: #fff;
+}
 
-/*-------------------- FOOTER STYLES ---------------------
+#home {
+	background: url(images/bread.jpg) 50% 0 repeat fixed;
+	/* make image size I want */
+	/* Responsive Design */
+	/*min-height: 1000px;*/
+	/*height: 1000px;*/
+	min-height: 900px;
+	height: 900px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+/* Text styles within Home */
+#home article {
+	height: 458px;
+	position: relative;
+	text-align: center;
+	top: 150px;
+	width: 100%;
+} 
+
+#about {
+	background: url(images/greens.jpg) 50% 0 no-repeat;
+	min-height: 1000px;
+	/* Responsive Design */
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	/* Pretty shadows */
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+/* Text styles within About */
+#about article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	width: 50%;
+}
+
+/* STYLES THE OPENING TEXT */
+
+.text-block {
+	width: 280px;
+	position: center;
+}
+
+.cupboard {
+	font-size: 120px;
+}
+
+
+
+/*-------------------- FOOTER STYLES ---------------------*/
 /**
  * Styles the footer
  **/
