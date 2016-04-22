@@ -287,16 +287,128 @@ body {
 
 /* STYLES THE OPENING TEXT */
 
-.text-block {
-	width: 280px;
-	position: center;
+/*.container {
+    width: 960px;
+    margin: 0 auto;
+}*/
+.container {
+	height: 10em;
+	position: relative;
 }
 
+/* Opentype Paragraph Styles */
+/*.opentype {
+	width: 620px;
+	color: #9d9e9d;
+	margin: 0 auto;
+}*/
+.opentype {
+	margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+/* Welcome to Cupboard Title */
+.opentype h2 {
+    color: #865;
+    width: 620px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 14px 0 13px 0;
+    border-top: 4px double #676767;
+    border-bottom: 4px double #676767;
+}
+
+/* Number One */
+/* black itel */
 .cupboard {
-	font-size: 120px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 900;
+    font-stretch: normal;
+    font-size: 130px;
+    line-height: 90px;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin-bottom: 12px;
+    display: block;
 }
 
+/* Number Two*/
+/* Itel */
+.ingredients {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0 0 8px 6px;
+    display: block;
+}
 
+/* Number Three */
+/* Small Cap */
+.million { 
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 18px;
+    line-height: 36px;
+    font-family: 'Playfair Display SC', Georgia, serif;
+    letter-spacing: .17em;
+    margin: 0 0 0 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Number Four */
+/* Reg */
+.most {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 46px;
+    line-height: 40px;
+    font-family: 'Playfair Display', Georgia, serif;
+    display: block;
+    /*margin: 0 0 0 -10px;*/
+    margin: 0 0 0 15;
+}
+
+/* Number Five */
+/* Bold */ 
+.popular {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 23px;
+    line-height: 36px;
+    font-family: 'Playfair Display', Georgia, serif;
+    display: block;
+    margin-left: 8px;
+}
+/* Number Six */
+/* Black */
+.get-started {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    font-stretch: normal;
+    font-size: 39px;
+    line-height: 32px;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin-left: 4px;
+    display: block;
+}
 
 /*-------------------- FOOTER STYLES ---------------------*/
 /**
