@@ -38,6 +38,7 @@ li {
 
 /* Styles all a tags to their default styles */
 li a {
+	font-size: 1.5em;
 	display: block;
 	color: #f0f0ee;
 	text-align: center;
@@ -47,13 +48,13 @@ li a {
 
 /* When NOT clicked */
 li a:hover:not(.active){
-	color: #2e2925;
-	background-color: #95b401;
+	color: #9a9d94;
+	/*background-color: #1a1715;*/
 }
 
 /* When a nav is the current tab */
 .active {
-	background-color: #95b401;
+	background-color: #1a1715;
 }
 
 /* Align last button (search) to the right*/
@@ -63,30 +64,8 @@ li:last-child {
 
 /*-------------------- INDEX STYLES ---------------------*/
 
-/**
- * Styles the index and search pages to have same background photo
- **/
-/*.index, .search {
-	background-image: url("https://static.pexels.com/photos/60795/pexels-photo-60795.jpeg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-*/
-/* Styles the centered text in the middle of the page */
-/*/
 
-/* Styles the text inside the class textcontainer */
-/*div.textcontainer p {
-	margin: 0;
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}*/
-
-/* Styles the buttons */
+/* Styles the search button */
  .button {
  	background-color: #2e2925;
  	border: none;
@@ -100,12 +79,13 @@ li:last-child {
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	font-size: 2em;
+	border-radius: 5px;
  }
 
-/* Stlyes the buttons whenever hovered over */
+/* Stlyes the button whenever hovered over */
  .button:hover {
- 	color: #2e2925;
- 	background-color: #95b401;
+ 	color: #fff;
+ 	background-color: #1a1715;
  }
 
 /*-------------------- SEARCH STYLES ---------------------*/
@@ -313,7 +293,8 @@ body {
 	font-family: 'Oswald', sans-serif;
 	margin: 6px 5px 0 3px;
 	letter-spacing: .05em;
-	color: #fff;
+	/*color: #fff;*/
+	color: #000;
 }
 
 /* Number One */
@@ -327,6 +308,7 @@ body {
     margin-top: 7px;
     margin-bottom: 12px;
     display: block;
+    color: #000;
 }
 
 /* Number Two*/
@@ -340,6 +322,7 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     margin: 0 0 8px 6px;
     display: block;
+    color: #000;
 }
 
 /* Number Three */
@@ -353,6 +336,7 @@ body {
     margin: 0 0 0 12px;
     text-transform: uppercase;
     display: block;
+    color: #000;
 }
 
 /* Number Four */
@@ -368,6 +352,7 @@ body {
     display: block;
     /*margin: 0 0 0 -10px;*/
     margin: 0 0 0 15;
+    color: #000;
 }
 
 /* Number Five */
@@ -382,6 +367,8 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     display: block;
     margin-left: 8px;
+    color: #000;
+
 }
 /* Number Six */
 /* Black */
@@ -392,6 +379,8 @@ body {
     line-height: 90px;
     font-family: 'Playfair Display', Georgia, serif;
     border-bottom: 4px double #676767;
+    color: #000;
+
 }
 
 /*-------------------- FOOTER STYLES ---------------------*/
