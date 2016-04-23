@@ -282,10 +282,12 @@ body {
 	width: 50%;
 }
 
+
 /* Opentype Paragraph Styles */
 .opentype {
-	text-align: center;
+	/*text-align: center;*/
     padding-top: 26vh;
+    text-align: center; 
 }
 
 
@@ -296,7 +298,7 @@ body {
 	font-size: 34px;
 	line-height: 30px;
     /*color: #865;*/
-    color: #fff;
+    color: #3d2b29;
     width: 620px;
     margin: 0 auto;
     text-transform: uppercase;
@@ -306,7 +308,8 @@ body {
 }
 
 .opentype h2 span {
-	font-size: 25px;
+	font-size: 20px;
+	font-weight: 300;
 	font-family: 'Oswald', sans-serif;
 	margin: 6px 5px 0 3px;
 	letter-spacing: .05em;
@@ -330,10 +333,9 @@ body {
 /* Itel */
 .ingredients {
     font-style: italic;
-    font-variant: normal;
     font-weight: 400;
-    font-stretch: normal;
     font-size: 60px;
+    letter-spacing: 3px;
     line-height: 60px;
     font-family: 'Playfair Display', Georgia, serif;
     margin: 0 0 8px 6px;
@@ -343,14 +345,11 @@ body {
 /* Number Three */
 /* Small Cap */
 .million { 
-    font-style: normal;
-    font-variant: normal;
     font-weight: 400;
-    font-stretch: normal;
     font-size: 18px;
     line-height: 36px;
     font-family: 'Playfair Display SC', Georgia, serif;
-    letter-spacing: .17em;
+    letter-spacing: 7px;
     margin: 0 0 0 12px;
     text-transform: uppercase;
     display: block;
@@ -363,7 +362,7 @@ body {
     font-variant: normal;
     font-weight: 400;
     font-stretch: normal;
-    font-size: 46px;
+    font-size: 42px;
     line-height: 40px;
     font-family: 'Playfair Display', Georgia, serif;
     display: block;
@@ -387,15 +386,12 @@ body {
 /* Number Six */
 /* Black */
 .get-started {
-    font-style: normal;
-    font-variant: normal;
+	font-style: italic;
     font-weight: 900;
-    font-stretch: normal;
-    font-size: 39px;
-    line-height: 32px;
+    font-size: 85px;
+    line-height: 90px;
     font-family: 'Playfair Display', Georgia, serif;
-    margin-left: 4px;
-    display: block;
+    border-bottom: 4px double #676767;
 }
 
 /*-------------------- FOOTER STYLES ---------------------*/
