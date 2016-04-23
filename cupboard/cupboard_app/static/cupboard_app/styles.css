@@ -5,21 +5,19 @@
 
 /******
  * Font Imports
- */
-  @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
-  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+ ******/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+/* Top bar Index page font */
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
+/* Top bar Index page "to" font */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
 /******/
 
-/**
- * Body Stylings / Background Image for index
- **/
+/*-------------------- GENERAL STYLES --------------------------*/
 
-/*body {
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #fff;
-}*/
-/*----------------------------------------------------------*/
 /**
  * Navigation Bar
  **/
@@ -242,10 +240,7 @@ body {
 
 #home {
 	background: url(images/bread.jpg) 50% 0 repeat fixed;
-	/* make image size I want */
 	/* Responsive Design */
-	/*min-height: 1000px;*/
-	/*height: 1000px;*/
 	min-height: 900px;
 	height: 900px;
 	margin: 0 auto;
@@ -276,6 +271,8 @@ body {
 	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
+
+
 /* Text styles within About */
 #about article {
 	height: 458px;
@@ -284,14 +281,6 @@ body {
 	top: 150px;
 	width: 50%;
 }
-
-/* STYLES THE OPENING TEXT */
-
-/*.container {
-    width: 960px;
-    margin: 0 auto;
-}*/
-
 
 /* Opentype Paragraph Styles */
 .opentype {
@@ -303,6 +292,10 @@ body {
 
 /* Welcome to Cupboard Title */
 .opentype h2 {
+	font-family: 'Vast Shadow', cursive;
+	font-size: 34px;
+	line-height: 30px;
+    /*color: #865;*/
     color: #fff;
     width: 620px;
     margin: 0 auto;
@@ -310,16 +303,21 @@ body {
     padding: 14px 0 13px 0;
     border-top: 4px double #676767;
     border-bottom: 4px double #676767;
-    font-type: 'Vast Shadow', 'Arial Black';
+}
+
+.opentype h2 span {
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+	margin: 6px 5px 0 3px;
+	letter-spacing: .05em;
+	color: #fff;
 }
 
 /* Number One */
 /* black itel */
 .cupboard {
     font-style: italic;
-    font-variant: normal;
     font-weight: 900;
-    font-stretch: normal;
     font-size: 130px;
     line-height: 90px;
     font-family: 'Playfair Display', Georgia, serif;
