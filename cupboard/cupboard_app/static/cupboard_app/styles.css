@@ -5,21 +5,19 @@
 
 /******
  * Font Imports
- */
-  @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
-  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+ ******/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300);
+/* Top bar Index page font */
+@import url(https://fonts.googleapis.com/css?family=Vast+Shadow);
+/* Top bar Index page "to" font */
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
 /******/
 
-/**
- * Body Stylings / Background Image for index
- **/
+/*-------------------- GENERAL STYLES --------------------------*/
 
-/*body {
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	color: #fff;
-}*/
-/*----------------------------------------------------------*/
 /**
  * Navigation Bar
  **/
@@ -242,10 +240,7 @@ body {
 
 #home {
 	background: url(images/bread.jpg) 50% 0 repeat fixed;
-	/* make image size I want */
 	/* Responsive Design */
-	/*min-height: 1000px;*/
-	/*height: 1000px;*/
 	min-height: 900px;
 	height: 900px;
 	margin: 0 auto;
@@ -276,6 +271,8 @@ body {
 	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
+
+
 /* Text styles within About */
 #about article {
 	height: 458px;
@@ -285,7 +282,11 @@ body {
 	width: 50%;
 }
 
-/* STYLES THE OPENING TEXT */
+/* Opentype Paragraph Styles */
+.opentype {
+	text-align: center;
+    padding-top: 26vh;
+}
 
 /*.container {
     width: 960px;
@@ -302,7 +303,7 @@ body {
 	color: #9d9e9d;
 	margin: 0 auto;
 }*/
-.opentype {
+/*.opentype {
 	margin: 0;
     background: yellow;
     position: absolute;
@@ -310,18 +311,31 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-}
+}*/
+
 
 
 /* Welcome to Cupboard Title */
 .opentype h2 {
-    color: #865;
+	font-family: 'Vast Shadow', cursive;
+	font-size: 34px;
+	line-height: 30px;
+    /*color: #865;*/
+    color: #fff;
     width: 620px;
     margin: 0 auto;
     text-transform: uppercase;
     padding: 14px 0 13px 0;
     border-top: 4px double #676767;
     border-bottom: 4px double #676767;
+}
+
+.opentype h2 span {
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+	margin: 6px 5px 0 3px;
+	letter-spacing: .05em;
+	color: #fff;
 }
 
 /* Number One */
@@ -335,20 +349,6 @@ body {
     line-height: 90px;
     font-family: 'Playfair Display', Georgia, serif;
     margin-bottom: 12px;
-    display: block;
-}
-
-/* Number Two*/
-/* Itel */
-.ingredients {
-    font-style: italic;
-    font-variant: normal;
-    font-weight: 400;
-    font-stretch: normal;
-    font-size: 60px;
-    line-height: 60px;
-    font-family: 'Playfair Display', Georgia, serif;
-    margin: 0 0 8px 6px;
     display: block;
 }
 
@@ -382,6 +382,22 @@ body {
     /*margin: 0 0 0 -10px;*/
     margin: 0 0 0 15;
 }
+
+
+/* Number Two*/
+/* Itel */
+.ingredients {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Playfair Display', Georgia, serif;
+    margin: 0 0 8px 6px;
+    display: block;
+}
+
 
 /* Number Five */
 /* Bold */ 
