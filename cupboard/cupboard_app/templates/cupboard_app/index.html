@@ -13,18 +13,26 @@
 				<span class="million">to search 1,000,000+ recipes from</span>
 				<span class="most"> the most popular websites today</span>
 				<!-- <span class="popular">popular websites today- Get started now!</span> -->
-				<span class="get-started">Get started now!</span>
+				<a href="#pagetwo"><span class="get-started">Get started now!</span></a>
 				<!-- <span class="get-started">Get started now!</span> -->
 			</div>	
 		</div>
 	</section>
 	<!-- Section #2 -->
 	<section id="about" data-type="background" data-speed="10">
-		<article>What?! How is this happening?! It's called mmmaaagicc! (Or JavaScript...)</article>
-		<div>
-		<!-- MAKE SURE THIS BUTTON STILL WORKS! -->
+		<a name="pagetwo"></a>
+
+		<form action="/results/" method="POST">	
+			{% csrf_token %}
+			1. Ingredients I have:<br>
+			<input type="text" name="ingredients" value="Peaches, Flour, Strawberries..."><br>
+			<input type="submit" value="2. Submit">
+		</form>
+
+<!-- 		<div>
+		MAKE SURE THIS BUTTON STILL WORKS!
 		<a href="/search" class="button">Search!</a>
-		</div>
+		</div> -->
 	</section>
 {% endblock %}
 			

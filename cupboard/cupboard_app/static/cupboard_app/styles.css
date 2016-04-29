@@ -64,6 +64,10 @@ li:last-child {
 
 /*-------------------- INDEX STYLES ---------------------*/
 
+/* Styles the "Get Started Now" button */
+#home a:visited {
+	color: #312423;
+}
 
 /* Styles the search button */
  .button {
@@ -219,7 +223,7 @@ body {
 }
 
 #home {
-	background: url(images/bread.jpg) 50% 0 repeat fixed;
+	background: url(images/blurredbread.jpg) 50% 0 repeat fixed;
 	/* Responsive Design */
 	min-height: 900px;
 	height: 900px;
@@ -295,6 +299,7 @@ body {
 	letter-spacing: .05em;
 	/*color: #fff;*/
 	color: #000;
+	/*color: #3d2b29;*/
 }
 
 /* Number One */
@@ -308,7 +313,9 @@ body {
     margin-top: 7px;
     margin-bottom: 12px;
     display: block;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
+
 }
 
 /* Number Two*/
@@ -322,7 +329,8 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     margin: 0 0 8px 6px;
     display: block;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
 }
 
 /* Number Three */
@@ -336,7 +344,8 @@ body {
     margin: 0 0 0 12px;
     text-transform: uppercase;
     display: block;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
 }
 
 /* Number Four */
@@ -352,7 +361,8 @@ body {
     display: block;
     /*margin: 0 0 0 -10px;*/
     margin: 0 0 0 15;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
 }
 
 /* Number Five */
@@ -367,7 +377,8 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     display: block;
     margin-left: 8px;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
 
 }
 /* Number Six */
@@ -379,7 +390,8 @@ body {
     line-height: 90px;
     font-family: 'Playfair Display', Georgia, serif;
     border-bottom: 4px double #676767;
-    color: #000;
+    /*color: #000;*/
+    color: #271b1a;
 
 }
 
