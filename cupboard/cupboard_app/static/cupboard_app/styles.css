@@ -14,10 +14,28 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
+
+
+@import url(https://fonts.googleapis.com/css?family=Unica+One);
 /******/
 
 /*-------------------- GENERAL STYLES TO APPLY TO EACH PAGE --------------------------*/
 
+/**
+ * Body Styles
+ **/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1b191a;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	/*font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;*/
+	font-family: 'Unica One', cursive;	
+	letter-spacing: -.1em;
+	/*font-size: 2em;*/
+	color: #fff;
+}
 /**
  * Navigation Bar
  **/
@@ -30,7 +48,8 @@ ul {
 	padding: 0px;
 	overflow: hidden;
 	/*background-color: rgba(46, 41, 37, 0.78);*/
-	background-color: rgba(46, 41, 37, 0.52);
+	/*background-color: rgba(46, 41, 37, 0.52);*/
+	background-color: #212221;
 }
 
 /* Align all nav buttons to the left */
@@ -42,7 +61,8 @@ li {
 li a {
 	font-size: 1.5em;
 	display: block;
-	color: #f0f0ee;
+	/*color: #f0f0ee;*/
+	color: #999;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -50,13 +70,15 @@ li a {
 
 /* When NOT clicked */
 li a:hover:not(.active){
-	color: #9a9d94;
+	color: #d5d4d4;
 	/*background-color: #1a1715;*/
 }
 
 /* When a nav is the current tab */
 .active {
-	background-color: #1a1715;
+	/*background-color: #1a1715;*/
+	background-color: #cd8850;
+	color: #212221;
 }
 
 /* Align last button (search) to the right*/
@@ -209,17 +231,6 @@ form {
 
 /*-------------------- PARALLAX STYLES ---------------------*/
 
-/**
- * Body Styles
- **/
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #1b191a;
-	font-family: 'Josefin Sans', sans-serif;
-	/*font-size: 2em;*/
-	color: #fff;
-}
 
 /* First Para page styles */
 #home {
@@ -262,7 +273,8 @@ body {
 	font-size: 34px;
 	line-height: 30px;
     /*color: #865;*/
-    color: #3d2b29;
+    /*color: #3d2b29;*/
+    color: #524136;
     width: 620px;
     margin: 0 auto;
     text-transform: uppercase;
