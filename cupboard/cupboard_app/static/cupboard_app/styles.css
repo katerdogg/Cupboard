@@ -88,6 +88,10 @@ li:last-child {
 
 /*-------------------- INDEX STYLES ---------------------*/
 
+/* Styles the "Get Started Now" button */
+#home a:visited {
+	color: #312423;
+}
 
 /* Styles the search button */
  .button {
@@ -234,7 +238,7 @@ form {
 
 /* First Para page styles */
 #home {
-	background: url(images/bread.jpg) 50% 0 repeat fixed;
+	background: url(images/blurredbread.jpg) 50% 0 repeat fixed;
 	/* Responsive Design */
 	min-height: 900px;
 	height: 900px;
@@ -292,7 +296,8 @@ form {
 	margin: 6px 5px 0 3px;
 	letter-spacing: .05em;
 	/*color: #fff;*/
-	/*color: #000;*/
+	color: #000;
+	/*color: #3d2b29;*/
 }
 
 /**
@@ -315,6 +320,8 @@ form {
     display: block;
     /*color: #000;*/
     letter-spacing: 5px;
+    color: #271b1a;
+
 }
 
 /* Number Two*/
@@ -329,6 +336,8 @@ form {
     font-family: 'Playfair Display', Georgia, serif;
     margin: 0 0 8px 6px;
     display: block;
+    /*color: #000;*/
+    color: #271b1a;
 }
 
 /* Number Three */
@@ -344,6 +353,7 @@ form {
     text-transform: uppercase;
     display: block;
     /*color: #000;*/
+    color: #271b1a;
 }
 
 /* Number Four */
@@ -361,6 +371,7 @@ form {
     /*margin: 0 0 0 -10px;*/
     margin: 0 0 0 15;
     /*color: #000;*/
+    color: #271b1a;
 }
 
 
@@ -378,8 +389,9 @@ form {
     display: block;
     margin-left: 8px;
     /*color: #000;*/
-
+    color: #271b1a;
 }
+
 /* Number Six */
 /* "Get started now!" */
 /* Black */
@@ -391,7 +403,7 @@ form {
     font-family: 'Playfair Display', Georgia, serif;
     border-bottom: 4px double #676767;
     /*color: #000;*/
-
+    color: #271b1a;
 }
 
 /**
