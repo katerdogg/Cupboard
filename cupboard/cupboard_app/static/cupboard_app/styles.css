@@ -93,11 +93,12 @@ li:last-child {
 	color: #312423;
 }
 
+
 /* Styles the search button */
  .button {
  	background-color: #2e2925;
  	border: none;
- 	color: #fff;
+ 	color: #fff;	
  	padding: 20px 40px;
  	text-align: center;
  	text-decoration: none;
@@ -122,6 +123,10 @@ li:last-child {
  * Form Styles
  **/
 
+.search {
+	background: url(images/cresstwo.jpg) 20% 0 repeat fixed;
+}
+
 /* Styles the main form */
 input[type=text] {
 	/*padding: 12px 20;*/
@@ -139,17 +144,19 @@ input[type=text] {
 
 /* When the form is clicked (or focus on) */
 input[type=text]:focus {
-	border: 3px solid #95b401;
+	border: 3px solid #975722;
 }
 
 /* Styles the submit button */
 input[type=submit] {
-	background-color: #2e2925;
+	background-color: #524136;
+	border-radius: 5px;
 	border: none;
 	color: #fff;
 	font-size: 1em;
-	font-family: 'Josefin Sans', sans-serif;
-	padding: 20px 40px;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Unica One', cursive;
+	padding: 20px 155px;
 	text-decoration: none;
 	margin: 4px 2px;
 }
@@ -157,7 +164,7 @@ input[type=submit] {
 /* Styles the submit button when hovered over */
 input[type=submit]:hover {
 	color: #2e2925;
-	background-color: #95b401;
+	background-color: #cd8850;
 }
 
 
@@ -173,6 +180,13 @@ form {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 3em;
+	color: white;
+	background-color: #271b1a;
+	padding: 20px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 30px #271b1a;
+	-webkit-box-shadow: 0 0 30px #271b1a;
+	box-shadow: 0 0 30px #271b1a;
 }
 
 /*-------------------- RESULT STYLES ---------------------*/
@@ -180,6 +194,12 @@ form {
 /**
  * Styles the general look of the results page
  **/
+
+/* Search Results Header */
+h1 {
+	text-align: center;
+	color: #999999;
+}
 
 /* creates the repeating background image */
 .result {
@@ -195,6 +215,7 @@ form {
  	margin-left: auto;
  	margin-right: auto;
  	text-align: center;
+ 	color: #999999;
  }
 
 /* Creates and styles each individual result */
@@ -205,20 +226,19 @@ form {
 	min-height: 290px;
 	list-style: none;
 	padding: 10px;
-	background-color: #2e2925;
-
+	background-color: #212221;
 	margin: 15px 15px 0 0;
 	display: inline-block;
 	vertical-align: top;
-	border: 5px solid #2e2925;
-	border-radius: 2px;
-	box-shadow: 2px 2px #687e01;
+	border: 5px solid #212221;
+	border-radius: 5px;
+	box-shadow: 2px 2px #cd8850;
 }
 
 
 /* Styles all a tags within the results_grid class */
 .result_grid a {
-	color: #fff;
+	color: #999999;
 	text-decoration: none;
 }
 

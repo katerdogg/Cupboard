@@ -14,7 +14,7 @@ Including another URLconf
     2. Import the include() function: from django.conf.urls import url, include
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
 from cupboard_app import views
 from django.conf import settings
@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^$', views.index, name="index"),
     url(r'^search/', views.search, name="search"),
     url(r'^results/', views.results, name="results"),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
